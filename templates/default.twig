@@ -1,0 +1,12 @@
+{% extends layout %}
+
+
+{% block body %}
+body content for unknown page
+
+	{% for block in template.blocks %}
+        {% include block.template %}
+	{% endfor %}   
+{% endblock %}
+
+  
